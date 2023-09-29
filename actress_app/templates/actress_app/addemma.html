@@ -1,0 +1,45 @@
+{% extends 'actress_app/base.html' %}
+{% block title %}Add Emma Pics{% endblock title %}
+{% block css %}
+    <style>
+        body{
+            background-color: antiquewhite;
+
+        }
+        .divadd{
+            width: 40vw;
+            height: 50vh;
+            margin-top: 20vh;
+            color: rgb(65, 50, 50);
+            box-shadow: 5px 5px 5px 5px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+        .container{
+            min-height: 100vh;
+        }
+        label{
+            margin-top: 10vh;
+            margin-left: 25%;
+            font-weight: bold;
+        }
+        #inp{
+            margin-left: 30%;
+            font-weight: bold;
+        }
+    </style>
+{% endblock css %}
+{% block main-content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 divadd">
+            <h3 class="text-center mt-2">Add Picture</h3>
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                {{frm}}<br>
+                <input type="submit" name="" id="inp" class="btn btn-outline-success mt-4">
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% endblock main-content %}

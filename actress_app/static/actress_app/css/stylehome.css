@@ -1,0 +1,12 @@
+.row{
+    color: rgb(65, 50, 50);
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.myimg{
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height: 28rem !important;
+    width: 100%;
+}

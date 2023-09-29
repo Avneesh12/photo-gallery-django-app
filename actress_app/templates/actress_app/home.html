@@ -1,0 +1,114 @@
+{% extends 'actress_app/base.html' %} 
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'actress_app/css/stylehome.css' %}">
+{% endblock css %}
+{% block main-content %} 
+
+
+<div class="container">
+
+  <div class="row justify-content-evenly m-4 p-4">
+    <div class="col-md-4">
+      <h3>Emma Watson</h3>
+      <p>
+        Emma Charlotte Duerre Watson (born 15 April 1990) is an English actress,
+        model and activist. Known for her roles in both blockbusters and
+        independent films, as well as for her women's rights work, she has
+        received a selection of accolades, including a Young Artist Award and
+        three MTV Movie Awards. Watson has been ranked among the world's
+        highest-paid actresses by Forbes and Vanity Fair, and was named one of
+        the 100 most influential people in the world by Time magazine in
+        2015. Watson attended the Dragon School and trained in acting
+        at the Oxford branch of Stagecoach Theatre Arts. 
+      </p>
+    </div>
+    <div class="col-md-4">
+      <img
+        src="{% static 'actress_app/images/emma.jpg' %}"
+        alt=""
+        class="img-fluid ms-2 myimg"
+      />
+    </div>
+  </div>
+
+      
+  <div class="row justify-content-evenly m-4 p-4">
+    <div class="col-md-4">
+        <img
+          src="{% static 'actress_app/images/krish.jpg' %}"
+          alt=""
+          class="img-fluid ms-2 myimg"
+        />
+      </div>
+    <div class="col-md-4">
+      <h3>Kristen Stewart</h3>
+      <p>
+        Kristen Jaymes Stewart (born April 9, 1990) is an American actress. 
+        She has received various accolades, including a British Academy Film 
+        Award and a César Award, in addition to nominations for an Academy Award and a Golden Globe Award.
+        Born and raised in Los Angeles to parents who both worked in the entertainment industry,
+         Stewart first gained notice at age 12 for her role as the daughter of Jodie Foster's 
+         character in David Fincher's thriller Panic Room (2002), which earned her a Young Artist
+          Award nomination. She subsequently starred in Speak (2004), Catch That Kid (2004), 
+          Zathura: A Space Adventure (2005), and Into the Wild (2007). 
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-evenly m-4 p-4">
+    <div class="col-md-4">
+      <h3>Aishwarya Rai</h3>
+      <p>
+        Aishwarya Rai Bachchan ( born 1 November 1973) is an Indian actress who 
+        is primarily known for her work in Hindi and Tamil films. The winner of 
+        the Miss World 1994 pageant, she later has established herself as one of 
+        the most popular and influential celebrities in India.
+         Rai has received numerous accolades, including two Filmfare Awards, 
+         and was honoured with the Padma Shri by the Government of India in 
+         2009 and the Ordre des Arts et des Lettres by the Government of France
+          in 2012. She has often been cited in the media as "the most beautiful woman in the world".
+      </p>
+    </div>
+    <div class="col-md-4">
+      <img
+        src="{% static 'actress_app/images/aish.jpg' %}"
+        alt=""
+        class="img-fluid ms-2 myimg"
+      />
+    </div>
+  </div>
+
+
+  <div class="row justify-content-evenly m-4 p-4">
+    <div class="col-md-4">
+        <img
+          src="{% static 'actress_app/images/ananya.jpg' %}"
+          alt=""
+          class="img-fluid ms-2 myimg"
+        />
+      </div>
+    <div class="col-md-4">
+      <h3>Ananya Panday</h3>
+      <p>
+        Ananya Panday made her acting debut in 2019 with the teen film Student of the Year 2, 
+        co-starring Tiger Shroff and Tara Sutaria, which was produced by Dharma Productions.
+         Writing for Scroll.in, Nandini Ramnath felt that Panday showed potential in an unremarkable film.
+          The film underperformed at the box office.
+          Panday next starred in Pati Patni Aur Woh (2019), a remake of the 1978 film of the same name, 
+          alongside Kartik Aaryan and Bhumi Pednekar. 
+          She played a secretary who indulges in an affair with a married man, 
+          which was portrayed by Ranjeeta Kaur in the original.
+          
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+{% endblock main-content %}

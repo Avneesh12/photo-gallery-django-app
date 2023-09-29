@@ -1,0 +1,58 @@
+{% extends 'actress_app/base.html' %}
+{% block title %}Sign Up{% endblock title %}
+{% block css %}
+    <style>
+        body{
+            background-color: rgb(230, 243, 115);
+
+        }
+        .divadd{
+            width: 40vw;
+            height: 50vh;
+            margin-top: 20vh;
+            color: rgb(65, 50, 50);
+            box-shadow: 5px 5px 5px 5px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+        .container{
+            min-height: 100vh;
+        }
+        label{
+            margin-top: 2vh;
+            margin-left: 20%;
+            font-weight: bold;
+        }
+        
+        #inp{
+            margin-left: 40%;
+            font-weight: bold;
+        }
+    </style>
+{% endblock css %}
+{% block main-content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 divadd pt-4">
+            <h3 class="text-center mt-2">Sign Up Here</h3>
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-6"><label for="">Enter UserName:</label></div>
+                    <div class="col-md-6">{{frm.username}}</div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6"><label for="">Enter Password:</label></div>
+                    <div class="col-md-6">{{frm.password1}}</div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6"><label for="">Re-enter Password:</label></div>
+                    <div class="col-md-6">{{frm.password2}}</div>
+                </div>
+                 
+                <input type="submit" name="" id="inp" class="btn btn-outline-success mt-4" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% endblock main-content %}

@@ -1,0 +1,64 @@
+{% extends 'actress_app/base.html' %}
+{% block title %}Sign In{% endblock title %}
+{% block css %}
+    <style>
+        body{
+            background-color: rgb(135, 245, 168);
+
+        }
+        .divadd{
+            width: 40vw;
+            height: 50vh;
+            margin-top: 20vh;
+            color: rgb(65, 50, 50);
+            box-shadow: 5px 5px 5px 5px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+        .container{
+            min-height: 100vh;
+        }
+        label{
+            margin-top: 10%;
+            margin-left: 20%;
+            font-weight: bold;
+        }
+        
+        #inp{
+            margin-left: 40%;
+            font-weight: bold;
+        }
+        input{
+            margin-top: 10%;
+        }
+    </style>
+{% endblock css %}
+{% block main-content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 divadd pt-4">
+            <h3 class="text-center mt-2">Sign In Here</h3>
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-6"><label for="">Enter UserName:</label></div>
+                    <div class="col-md-6"><input type="text" name="uname" id=""> </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6"><label for="">Enter Password:</label></div>
+                    <div class="col-md-6"><input type="password" name="upass" id="" class=""> </div>
+                </div> 
+                <div class="row justify-content-end">
+                    <div class="col-md-4">
+                        <input type="submit" name="" id="inp" class="btn btn-outline-success mt-4" value="Sign In">
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <a href="{% url 'signup' %}" class=" btn btn-outline-danger">Sign Up</a>
+                    </div>
+                </div> 
+                
+            </form>
+        </div>
+    </div>
+</div>
+    
+{% endblock main-content %}

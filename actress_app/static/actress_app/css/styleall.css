@@ -1,0 +1,14 @@
+.emmarow{
+    color: rgb(65, 50, 50);
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+h1{
+    text-shadow: 5px 5px 15px ;
+}
+
+.emmaimg{
+    box-shadow: 5px 5px 5px 5px;
+    height: 28rem !important;
+    width: 80%;
+}
